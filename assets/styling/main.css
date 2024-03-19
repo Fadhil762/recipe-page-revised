@@ -1,0 +1,29 @@
+*{
+    box-sizing:border-box;
+    overflow:hidden;
+}
+body{
+    background-color:#F3E5D8;
+}
+#card-container{
+    margin:50px auto 50px auto;
+    background-color:#fafafa;
+    width: 850px;
+    height:auto;
+    border:1px solid #fafafa;
+    border-radius:20px;
+}
+#card-wrapper{
+    margin:40px 30px auto 30px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.recipe-image{
+    width:750px;
+    height:auto;
+    border:1px solid #fafafa;
+    border-radius:10px;
+}

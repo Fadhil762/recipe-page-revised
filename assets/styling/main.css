@@ -2,13 +2,14 @@
     box-sizing:border-box;
 }
 body{
-    overflow:hidden;
+    /* overflow:hidden; */
     background-color:#F3E5D8;
     min-height: 100vh;
     display:flex;
     justify-content: center;
     align-items: center;
 }
+/* recipe card container css*/
 #card-container{
     background-color:#fafafa;
     width: 850px;
@@ -33,11 +34,12 @@ body{
     margin: 10px 0 10px 0;
 }
 .recipe-description{
-    color: #6c6c6c;
+    color: #747171;
     font-family: 'Times New Roman', Times, serif;
     font-weight:400;
     text-align: justify;
 }
+/*preparation and ingredients css*/
 #preparation-container{
     background-color:#FFF7FC;
 }
@@ -51,12 +53,100 @@ body{
     color:#5F2E44;
 }
 .preparation-list{
+    padding:0;
+    margin: auto auto auto 20px;
     list-style-type: square;
-    color:#5F2E44;
+    color: #747171;
+}
+.preparation-list li span{
+    font-weight:800;
+    color:#645757f8;
 }
 .preparation-list li{
-    margin-bottom:10px;
+    padding-left:20px;
+    margin-bottom:15px;
+}
+.preparation-list li::marker{
+    font-size:14px;
+    color:#5F2E44;
 }
 #ingredient-container{
     margin: 30px auto 20px auto;
+    border-bottom:1px solid #948f8f;
+}
+.ingredient-title{
+    color:#68433B;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:600;
+    font-size:28px;
+}
+.ingredient-list{
+    padding:0 0 20px 0;
+    margin:auto auto auto 20px;
+    list-style-type:square;
+    color:#747171;
+}
+.ingredient-list li{
+    margin-bottom:15px;
+    padding-left:20px;
+}
+.ingredient-list li::marker{
+    color:#68433B;
+    font-size:14px;
+} 
+/* Instructions and Nutrition CSS*/
+#instructions-container{
+    border-bottom:1px solid #948f8f;
+}
+.instructions-title{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:600;
+    font-size: 28px;
+    color:#68433B;
+}
+.instructions-list{
+    padding: 0 0 20px 0;
+}
+.instructions-list li{
+    color:#747171;
+    margin:auto auto 10px 20px;
+    padding-left: 20px;
+}
+.instructions-list li::marker{
+    color:#68433B;
+    font-weight:600;
+    font-size:18px;
+}
+.instructions-list span{
+    color:#645757f8;
+    font-weight:800;
+}
+/* Nutrition section CSS*/
+.nutrition-title{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:600;
+    color:#68433B;
+    font-size: 28px;
+}
+.table-description{
+    font-family: Arial, Helvetica, sans-serif;
+    color:#747171;
+    font-size:18px;
+}
+.nutrition-table{
+    font-family:Arial, Helvetica, sans-serif;
+    display:grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto;
+    color:#747171;
+    
+}
+.table-item{
+    border-bottom:1px solid black;
+    
+}
+.calories-value, .carbs-value, .protein-value, .fat-value{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:600;
+    color:#68433B;
 }

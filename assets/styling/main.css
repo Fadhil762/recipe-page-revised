@@ -2,7 +2,6 @@
     box-sizing:border-box;
 }
 body{
-    /* overflow:hidden; */
     background-color:#F3E5D8;
     min-height: 100vh;
     display:flex;
@@ -11,6 +10,7 @@ body{
 }
 /* recipe card container css*/
 #card-container{
+    margin: 50px auto 50px auto;
     background-color:#fafafa;
     width: 850px;
     height:auto;
@@ -133,20 +133,17 @@ body{
     color:#747171;
     font-size:18px;
 }
-.nutrition-table{
-    font-family:Arial, Helvetica, sans-serif;
+#nutrition-table{
+    font-family: Arial, Helvetica, sans-serif;
     display:grid;
     grid-template-columns: auto auto;
-    grid-template-rows: auto auto auto auto;
+    line-height:1.5;
+}
+.nutritions-labels{
     color:#747171;
-    
+    font-weight:400;
 }
-.table-item{
-    border-bottom:1px solid black;
-    
-}
-.calories-value, .carbs-value, .protein-value, .fat-value{
-    font-family:Arial, Helvetica, sans-serif;
-    font-weight:600;
+.nutrition-values{
     color:#68433B;
+    font-weight:800;
 }
